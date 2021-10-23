@@ -1,4 +1,4 @@
-﻿namespace EmpleadoGrid {
+﻿namespace TipoInquilinoGrid {
 
     declare var MensajeApp;
 
@@ -16,7 +16,7 @@
             .then(result => {
                 if (result.isConfirmed)
                 {
-                    window.location.href = "Empleado/Grid?handler=Eliminar&id=" + id;
+                    window.location.href = "TipoInquilino/Grid?handler=Eliminar&id=" + id;
                 }
 
             });

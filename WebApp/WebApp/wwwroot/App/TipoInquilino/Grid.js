@@ -1,6 +1,6 @@
 "use strict";
-var EmpleadoGrid;
-(function (EmpleadoGrid) {
+var TipoInquilinoGrid;
+(function (TipoInquilinoGrid) {
     if (MensajeApp != "") {
         Toast.fire({
             icon: "success", title: MensajeApp
@@ -10,11 +10,11 @@ var EmpleadoGrid;
         ComfirmAlert("Desea eliminar el registro?", "Eliminar", "warning", "#3085d6", "d33")
             .then(function (result) {
             if (result.isConfirmed) {
-                window.location.href = "Empleado/Grid?handler=Eliminar&id=" + id;
+                window.location.href = "TipoInquilino/Grid?handler=Eliminar&id=" + id;
             }
         });
     }
-    EmpleadoGrid.OnClickEliminar = OnClickEliminar;
+    TipoInquilinoGrid.OnClickEliminar = OnClickEliminar;
     $("#GridView").DataTable();
-})(EmpleadoGrid || (EmpleadoGrid = {}));
+})(TipoInquilinoGrid || (TipoInquilinoGrid = {}));
 //# sourceMappingURL=Grid.js.map
